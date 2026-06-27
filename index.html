@@ -8,26 +8,19 @@
   <meta name="theme-color" content="#0d0f12"/>
   <meta name="description" content="Diwakar B — CS Engineering Student, Web Developer & Growth Strategist based in Bengaluru."/>
   <title>Diwakar.B | Portfolio</title>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <!-- tsParticles CDN -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- ── PARTICLES CANVAS ───────────────────── -->
+<!-- PARTICLES -->
 <div id="tsparticles"></div>
 
-<!-- ── LOADER ────────────────────────────── -->
+<!-- LOADER -->
 <div id="loader">
   <div class="loader-inner">
     <div class="loader-logo">
@@ -38,12 +31,12 @@
   </div>
 </div>
 
-<!-- ── EXIT OVERLAY ───────────────────────── -->
+<!-- EXIT OVERLAY -->
 <div id="exit-overlay">
   <div class="exit-card">
     <div class="exit-emoji">🙏</div>
-    <h2>Thanks for stopping by!</h2>
-    <p>Your time means a lot. Let's connect and build something great together.</p>
+    <h2>Thanks for Stopping By!</h2>
+    <p>Your time means everything. Let's connect and build something remarkable together.</p>
     <div class="exit-actions">
       <a href="mailto:battinidivakar@gmail.com" class="btn-primary">Get in Touch</a>
       <button id="exit-stay" class="btn-ghost">Stay &amp; Explore</button>
@@ -51,13 +44,19 @@
   </div>
 </div>
 
-<!-- ── TOAST NOTIFICATION ─────────────────── -->
+<!-- TOAST -->
 <div id="toast" class="toast">
-  <i class="fas fa-check-circle"></i>
-  <span id="toast-msg">Message sent! I'll get back to you soon.</span>
+  <div class="toast-icon"><i class="fas fa-check"></i></div>
+  <div class="toast-body">
+    <strong id="toast-title">Message Sent!</strong>
+    <span id="toast-msg">Thank you! I'll get back to you soon.</span>
+  </div>
+  <button class="toast-close" onclick="document.getElementById('toast').classList.remove('show')">
+    <i class="fas fa-times"></i>
+  </button>
 </div>
 
-<!-- ── NAVBAR ─────────────────────────────── -->
+<!-- NAVBAR -->
 <nav id="navbar">
   <div class="nav-container">
     <a href="#home" class="nav-logo">Diwakar<span>.B</span></a>
@@ -70,25 +69,18 @@
       <li><a href="#projects"       class="nav-link">Projects</a></li>
       <li><a href="#certifications" class="nav-link">Certifications</a></li>
       <li><a href="#contact"        class="nav-link">Contact</a></li>
-      <li>
-        <a href="Diwakar_B_Resume.pdf" download="Diwakar_B_Resume.pdf" class="btn-nav-cta">
-          <i class="fas fa-download"></i> Resume
-        </a>
-      </li>
     </ul>
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════════════
-     HERO
-═══════════════════════════════════════════ -->
+<!-- ═══ HERO ═══ -->
 <section id="home" class="hero">
   <div class="hero-content">
     <p class="hero-eyebrow reveal">Hello, World! 👋 I'm</p>
     <h1 class="hero-name reveal">Diwakar<span class="accent">.B</span></h1>
     <div class="hero-rule reveal"></div>
     <div class="hero-roles reveal">
-      <span class="role-prefix">A&nbsp;</span>
+      <span>A&nbsp;</span>
       <span class="typewriter" id="typewriter"></span>
       <span class="cursor-blink">|</span>
     </div>
@@ -98,29 +90,27 @@
       <span class="highlight">optimise</span> and <span class="highlight">accelerate</span> outcomes.
     </p>
     <div class="hero-cta reveal">
-      <a href="#projects" class="btn-primary">View My Work</a>
-      <a href="#contact"  class="btn-ghost">Let's Connect</a>
+      <a href="#projects" class="btn-primary"><i class="fas fa-eye"></i> View My Work</a>
+      <a href="#contact"  class="btn-ghost"><i class="fas fa-paper-plane"></i> Let's Connect</a>
     </div>
     <div class="hero-stats reveal">
       <div class="hero-stat"><strong>2+</strong><span>Live Projects</span></div>
+      <div class="hero-stat-div"></div>
       <div class="hero-stat"><strong>1</strong><span>Certification</span></div>
+      <div class="hero-stat-div"></div>
       <div class="hero-stat"><strong>2027</strong><span>Batch</span></div>
     </div>
     <div class="hero-socials reveal">
       <a href="https://www.linkedin.com/in/diwakar-b-24b300291/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://github.com/Diwakar7396"                   target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://www.instagram.com/nameis.divakar_/"       target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:battinidivakar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:battinidivakar@gmail.com"                  aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
-  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-    <span></span><span></span><span></span>
-  </a>
+  <a href="#about" class="scroll-indicator" aria-label="Scroll"><span></span><span></span><span></span></a>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     ABOUT
-═══════════════════════════════════════════ -->
+<!-- ═══ ABOUT ═══ -->
 <section id="about" class="section">
   <div class="container">
     <div class="section-header">
@@ -128,17 +118,14 @@
       <h2 class="section-title">Who is <span class="accent">Diwakar?</span></h2>
     </div>
     <div class="about-grid">
-
-      <!-- Avatar column -->
       <div class="about-avatar-col reveal-left">
         <div class="avatar-card">
           <div class="avatar-photo-wrap">
-            <img src="assets/profile.jpg" alt="Diwakar B" class="avatar-photo" loading="lazy"/>
+            <img src="assets/profile.jpg" alt="Diwakar B" class="avatar-photo" loading="lazy"
+                 onerror="this.onerror=null;this.src='assets/profile.jpeg'"/>
             <div class="avatar-photo-ring"></div>
           </div>
-          <div class="avatar-status">
-            <span class="status-dot"></span> Open to Internships
-          </div>
+          <div class="avatar-status"><span class="status-dot"></span> Open to Internships</div>
           <div class="avatar-info">
             <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka</p>
             <p><i class="fas fa-graduation-cap"></i> Jain University &middot; 2027</p>
@@ -147,24 +134,21 @@
           </div>
         </div>
       </div>
-
-      <!-- Text column -->
       <div class="about-text-col reveal-right">
         <p class="about-intro">
-          I'm a <strong>Computer Science Engineering student</strong> at Jain University (2027 Batch), based in Bengaluru. 
-          I'm driven by a passion for building web solutions that <span class="highlight">streamline</span> real-world 
+          I'm a <strong>Computer Science Engineering student</strong> at Jain University (2027 Batch), based in Bengaluru.
+          I'm driven by a passion for building web solutions that <span class="highlight">streamline</span> real-world
           processes and <span class="highlight">enhance</span> everyday experiences.
         </p>
         <p>
           My journey started with curiosity and grew into hands-on projects — from booking systems to finance trackers.
-          I thrive in team environments, bringing strong <span class="highlight">accountability</span>, communication, 
+          I thrive in team environments, bringing strong <span class="highlight">accountability</span>, communication,
           and a results-oriented mindset to every deliverable.
         </p>
         <p>
-          I'm currently looking for a <strong>Growth &amp; Program Strategy internship</strong> where I can synergise 
+          I'm currently looking for a <strong>Growth &amp; Program Strategy internship</strong> where I can synergise
           business thinking with technical skills to drive <span class="highlight">KPI</span>-aligned outcomes.
         </p>
-
         <div class="about-cards">
           <div class="about-mini-card">
             <i class="fas fa-code"></i>
@@ -182,13 +166,12 @@
             <span>Event Coordination</span>
           </div>
         </div>
-
         <div class="about-languages">
           <h4>Languages</h4>
           <div class="lang-tags">
             <span>English</span>
             <span>Hindi</span>
-            <span>Telugu <small>✓ Fluent</small></span>
+            <span>Telugu <small class="accent">✓ Fluent</small></span>
             <span>Kannada</span>
           </div>
         </div>
@@ -197,9 +180,7 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     EDUCATION
-═══════════════════════════════════════════ -->
+<!-- ═══ EDUCATION ═══ -->
 <section id="education" class="section section-alt">
   <div class="container">
     <div class="section-header">
@@ -230,9 +211,7 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     SKILLS
-═══════════════════════════════════════════ -->
+<!-- ═══ SKILLS ═══ -->
 <section id="skills" class="section">
   <div class="container">
     <div class="section-header">
@@ -244,18 +223,15 @@
         <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
         <h3>Web Development</h3>
         <div class="skill-tags">
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag">PHP</span>
-          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span>
+          <span class="skill-tag">PHP</span><span class="skill-tag">Responsive Design</span>
         </div>
       </div>
       <div class="skill-category reveal">
         <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
         <h3>Database</h3>
         <div class="skill-tags">
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">SQL</span><span class="skill-tag">MySQL</span>
           <span class="skill-tag">NoSQL Basics</span>
         </div>
       </div>
@@ -263,20 +239,16 @@
         <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
         <h3>Tools &amp; Productivity</h3>
         <div class="skill-tags">
-          <span class="skill-tag">MS Excel</span>
-          <span class="skill-tag">Google Sheets</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">MS Excel</span><span class="skill-tag">Google Sheets</span>
+          <span class="skill-tag">GitHub</span><span class="skill-tag">VS Code</span>
         </div>
       </div>
       <div class="skill-category reveal">
         <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
         <h3>Core Competencies</h3>
         <div class="skill-tags">
-          <span class="skill-tag">Team Coordination</span>
-          <span class="skill-tag">Communication</span>
-          <span class="skill-tag">Problem Solving</span>
-          <span class="skill-tag">Accountability</span>
+          <span class="skill-tag">Team Coordination</span><span class="skill-tag">Communication</span>
+          <span class="skill-tag">Problem Solving</span><span class="skill-tag">Accountability</span>
         </div>
       </div>
     </div>
@@ -293,9 +265,7 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     PROJECTS
-═══════════════════════════════════════════ -->
+<!-- ═══ PROJECTS ═══ -->
 <section id="projects" class="section section-alt">
   <div class="container">
     <div class="section-header">
@@ -305,21 +275,21 @@
     </div>
     <div class="projects-grid">
 
+      <!-- Project 01 -->
       <div class="project-card reveal">
         <div class="project-number">01</div>
         <div class="project-header">
           <div class="project-icon"><i class="fas fa-car"></i></div>
           <div class="project-badges">
-            <span class="badge">PHP</span>
-            <span class="badge">SQL</span>
+            <span class="badge">PHP</span><span class="badge">SQL</span>
             <span class="badge badge-live">● Live</span>
           </div>
         </div>
         <h3>Car Parking Booking System</h3>
         <p class="project-date"><i class="fas fa-calendar"></i> February 2026</p>
         <p class="project-desc">
-          A fully functional parking slot booking platform. Users can book, view, and manage parking slots in real time 
-          with a database-integrated backend that prevents double bookings and streamlines slot allocation.
+          A fully functional parking slot booking platform. Users can book, view, and manage parking slots
+          in real time with a database-integrated backend that prevents double bookings and streamlines slot allocation.
         </p>
         <ul class="project-points">
           <li>Engineered full booking lifecycle — reservation to release</li>
@@ -336,21 +306,21 @@
         </div>
       </div>
 
+      <!-- Project 02 -->
       <div class="project-card reveal">
         <div class="project-number">02</div>
         <div class="project-header">
           <div class="project-icon"><i class="fas fa-wallet"></i></div>
           <div class="project-badges">
-            <span class="badge">PHP</span>
-            <span class="badge">SQL</span>
+            <span class="badge">PHP</span><span class="badge">SQL</span>
             <span class="badge badge-live">● Live</span>
           </div>
         </div>
         <h3>Personal Finance Tracker</h3>
         <p class="project-date"><i class="fas fa-calendar"></i> May 2026</p>
         <p class="project-desc">
-          A smart expense management web app that helps users track daily spending, monitor financial patterns, 
-          and make informed decisions — all with a clean, intuitive interface.
+          A smart expense management web app that helps users track daily spending, monitor financial
+          patterns, and make informed decisions — all with a clean, intuitive interface.
         </p>
         <ul class="project-points">
           <li>Synthesised expense data into actionable financial insights</li>
@@ -371,9 +341,7 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     CERTIFICATIONS
-═══════════════════════════════════════════ -->
+<!-- ═══ CERTIFICATIONS ═══ -->
 <section id="certifications" class="section">
   <div class="container">
     <div class="section-header">
@@ -389,7 +357,7 @@
         <h3>Deloitte Technology Job Simulation</h3>
         <p class="cert-issuer">Issued by <strong>Deloitte</strong> via Forage &mdash; June 3, 2025</p>
         <p class="cert-desc">
-          Completed practical industry tasks in Coding and Development. Certificate of Completion issued by 
+          Completed practical industry tasks in Coding and Development. Certificate of Completion issued by
           Tina McCreery, Chief Human Resources Officer, Deloitte.
         </p>
         <div class="cert-codes">
@@ -401,9 +369,7 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     LEADERSHIP
-═══════════════════════════════════════════ -->
+<!-- ═══ LEADERSHIP ═══ -->
 <section id="leadership" class="section section-alt">
   <div class="container">
     <div class="section-header">
@@ -430,9 +396,7 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     RESUME DOWNLOAD
-═══════════════════════════════════════════ -->
+<!-- ═══ RESUME DOWNLOAD ═══ -->
 <section id="resume" class="section resume-section">
   <div class="container">
     <div class="resume-card reveal">
@@ -443,16 +407,15 @@
           <p>Get the complete picture — experience, projects, and certifications in one document.</p>
         </div>
       </div>
-      <a href="Diwakar_B_Resume.pdf" download="Diwakar_B_Resume.pdf" class="btn-primary btn-lg">
+      <a href="Diwakar_B_Resume.pdf" download="Diwakar_B_Resume.pdf"
+         class="btn-primary btn-lg" id="resume-dl-btn">
         <i class="fas fa-download"></i> Download Resume
       </a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     CONTACT
-═══════════════════════════════════════════ -->
+<!-- ═══ CONTACT ═══ -->
 <section id="contact" class="section">
   <div class="container">
     <div class="section-header">
@@ -461,7 +424,6 @@
       <p class="section-sub">Have an opportunity, project, or just want to say hello? I'd love to hear from you.</p>
     </div>
     <div class="contact-grid">
-
       <div class="contact-info reveal-left">
         <h3>Get in Touch</h3>
         <div class="contact-items">
@@ -488,9 +450,9 @@
         </div>
       </div>
 
-      <!-- AJAX form — no page navigation on submit -->
       <div class="contact-form-wrap reveal-right">
-        <form id="contact-form" class="contact-form">
+        <!-- NO action or method — pure AJAX, URL never changes -->
+        <form id="contact-form" class="contact-form" autocomplete="off">
           <div class="form-group">
             <label for="f-name">Your Name</label>
             <input type="text" id="f-name" name="name" placeholder="John Doe" required/>
@@ -505,30 +467,28 @@
           </div>
           <div class="form-group">
             <label for="f-message">Message</label>
-            <textarea id="f-message" name="message" rows="5" placeholder="Hi Diwakar, I'd like to connect about..." required></textarea>
+            <textarea id="f-message" name="message" rows="5"
+              placeholder="Hi Diwakar, I'd like to connect about..." required></textarea>
           </div>
           <button type="submit" class="btn-primary btn-full" id="submit-btn">
             <i class="fas fa-paper-plane"></i> Send Message
           </button>
         </form>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <a href="#home" class="footer-logo">Diwakar<span>.B</span></a>
       <div class="footer-socials">
-        <a href="https://www.linkedin.com/in/diwakar-b-24b300291/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/Diwakar7396"                   target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/nameis.divakar_/"       target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:battinidivakar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/diwakar-b-24b300291/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Diwakar7396"                   target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/nameis.divakar_/"       target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:battinidivakar@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
     <div class="footer-bottom">
